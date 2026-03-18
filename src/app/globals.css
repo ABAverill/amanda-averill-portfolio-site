@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Design system — light, clean, professional */
+  --color-bg: #fafaf8;
+  --color-surface: #ffffff;
+  --color-border: #e5dfd6;
+  --color-accent: #1b4f72;
+  --color-accent-light: #d6e8f5;
+  --color-accent-alt: #2e8b6e;
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #5c5c70;
+  --color-text-muted: #a0a0b2;
+  --font-family-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-family-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+  }
+}
+
+/* Subtle dot-grid pattern for hero */
+.hero-dots {
+  background-image: radial-gradient(circle, rgba(27, 79, 114, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
