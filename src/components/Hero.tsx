@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 
 const blobs = [
   {
@@ -75,7 +75,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-[#A0A0B2] mb-4"
           >
-            Talent Acquisition · Life Sciences · Medical Devices
+            Talent Acquisition · Packaging · Life Sciences
           </motion.p>
 
           <motion.h1
@@ -89,7 +89,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-lg md:text-xl text-[#5C5C70] max-w-xl mb-10 leading-relaxed"
           >
-            Building high-performing teams in the life sciences — connecting exceptional talent with the organizations shaping the future of health.
+            Connecting exceptional talent with the organizations shaping the future of packaging, medical devices, and life sciences.
           </motion.p>
 
           <motion.div
@@ -109,6 +109,14 @@ export default function Hero() {
               className="px-8 py-3.5 border border-[#E5DFD6] text-[#1A1A2E] font-medium rounded-md hover:border-[#1B4F72] hover:text-[#1B4F72] transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
             >
               Get in Touch
+            </a>
+            <a
+              href="/Amanda_Averill_Resume_March%202026.pdf"
+              download
+              className="flex items-center gap-2 px-8 py-3.5 border border-[#E5DFD6] text-[#1A1A2E] font-medium rounded-md hover:border-[#1B4F72] hover:text-[#1B4F72] transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <Download size={16} />
+              Resume
             </a>
           </motion.div>
         </div>

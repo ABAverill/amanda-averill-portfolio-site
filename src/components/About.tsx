@@ -68,19 +68,19 @@ const highlights = [
     icon: Users,
     title: "Relationship-Driven",
     description:
-      "Building trust with consultants and clients through transparent, consultative partnership — achieving the highest retention rate on the team.",
+      "Known for building lasting relationships on both sides of the search — achieving the highest consultant retention rate on the team and repeat client partnerships.",
   },
   {
     icon: Briefcase,
-    title: "Industry Depth",
+    title: "Cross-Industry Depth",
     description:
-      "Deep networks spanning pharmaceutical, medical devices, regulatory affairs, labeling, packaging, and quality functions.",
+      "Dual expertise in packaging & manufacturing and medical devices & life sciences — a rare combination that opens doors across both worlds.",
   },
   {
     icon: Award,
-    title: "Results-Oriented",
+    title: "Proven Track Record",
     description:
-      "Recruiter of the Year (2022) and consistent top performer — recognized for client engagement and consultant satisfaction.",
+      "Recruiter of the Year (2022), recognized for client engagement, and backed by the 30+ year network and reputation of Cover + Associates.",
   },
 ];
 
@@ -110,19 +110,13 @@ export default function About() {
             </motion.h2>
             <motion.div variants={item} className="text-[#5C5C70] leading-relaxed space-y-4">
               <p>
-                With a background spanning talent acquisition, business development, and marketing,
-                I bring a well-rounded perspective to the life sciences recruiting space. Since 2020,
-                I&apos;ve specialized in placing regulatory, labeling, packaging, and quality consultants
-                in pharmaceutical and medical device organizations.
+                I&apos;m a talent acquisition professional with a track record across packaging, medical devices, and life sciences. Currently an Executive Recruiter at <span className="text-[#1A1A2E] font-medium">Cover + Associates</span>, I place senior-level talent across packaging, manufacturing, logistics, CPG, and OEM sectors.
               </p>
               <p>
-                My approach is consultative and candidate-centered. I invest in understanding what
-                drives each individual and what each organization truly needs — creating matches that
-                go beyond qualifications to deliver genuine cultural and strategic fit.
+                Before moving into executive search, I spent several years placing regulatory, labeling, packaging, and quality professionals in medical device and pharmaceutical organizations — experience that sharpens every search I run today.
               </p>
               <p>
-                Currently an Executive Recruiter at Cover + Associates, I continue to build on a
-                track record of high retention, strong client relationships, and meaningful placements.
+                My approach is consultative and relationship-first: I invest deeply in understanding what drives each candidate and what each client truly needs, creating placements that last.
               </p>
             </motion.div>
           </div>
