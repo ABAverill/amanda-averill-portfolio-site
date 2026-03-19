@@ -31,3 +31,41 @@
   background-image: radial-gradient(circle, rgba(27, 79, 114, 0.08) 1px, transparent 1px);
   background-size: 28px 28px;
 }
+
+/* Animated gradient blobs */
+@keyframes blob {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  25%       { transform: translate(30px, -25px) scale(1.08); }
+  50%       { transform: translate(-20px, 30px) scale(0.95); }
+  75%       { transform: translate(20px, -10px) scale(1.04); }
+}
+
+.animate-blob {
+  animation: blob 22s infinite ease-in-out;
+}
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+/* Shimmer effect for placeholder cards */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0ee 25%, #e8e5e0 50%, #f0f0ee 75%);
+  background-size: 800px 100%;
+  animation: shimmer 2.5s infinite linear;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #1b4f72 0%, #2e8b6e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

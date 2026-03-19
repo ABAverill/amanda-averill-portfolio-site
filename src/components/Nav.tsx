@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 const SECTIONS = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
+  { id: "accomplishments", label: "Accomplishments" },
   { id: "specializations", label: "Specializations" },
   { id: "contact", label: "Contact" },
 ] as const;

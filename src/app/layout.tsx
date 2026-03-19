@@ -19,13 +19,13 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Amanda Averill | Executive Recruiter | Life Sciences & Packaging",
+  title: "Amanda Averill | Talent Acquisition | Life Sciences & Medical Devices",
   description:
-    "Amanda Averill is an executive recruiter specializing in life sciences and packaging industries, connecting top-tier talent with leading organizations.",
+    "Amanda Averill is a talent acquisition professional specializing in medical devices and pharmaceuticals — placing regulatory, labeling, packaging, and quality talent.",
   openGraph: {
-    title: "Amanda Averill | Executive Recruiter",
+    title: "Amanda Averill | Talent Acquisition",
     description:
-      "Executive recruiter specializing in life sciences and packaging, building leadership teams that drive innovation and growth.",
+      "Talent acquisition professional specializing in life sciences, medical devices, and pharmaceuticals.",
     url: "https://amanda-averill.com",
     siteName: "Amanda Averill",
     locale: "en_US",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amanda Averill | Executive Recruiter",
+    title: "Amanda Averill | Talent Acquisition",
     description:
-      "Executive recruiter specializing in life sciences and packaging industries.",
+      "Talent acquisition professional specializing in life sciences and medical devices.",
   },
   metadataBase: new URL("https://amanda-averill.com"),
 };
