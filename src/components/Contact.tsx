@@ -62,7 +62,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4"
+          className="flex flex-col sm:flex-row flex-wrap justify-center gap-4"
         >
           {contacts.map(({ icon: Icon, label, value, href }, i) => (
             <motion.div
@@ -72,7 +72,7 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               whileHover={{ y: -3, boxShadow: "0 8px 24px rgba(27,79,114,0.12)" }}
-              className="flex items-center gap-3 px-5 py-4 rounded-lg bg-white border border-[#E5DFD6] text-left hover:border-[#1B4F72]/40 transition-all shadow-sm cursor-default"
+              className="flex items-center gap-3 px-5 py-4 rounded-lg bg-white border border-[#E5DFD6] text-left hover:border-[#1B4F72]/40 transition-all shadow-sm cursor-default w-full sm:w-auto"
             >
               <div className="p-2 rounded-lg bg-[#D6E8F5] text-[#1B4F72] shrink-0">
                 <Icon size={18} />
@@ -86,12 +86,12 @@ export default function Contact() {
                     href={href}
                     target={href.startsWith("http") ? "_blank" : undefined}
                     rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="text-sm text-[#1A1A2E] hover:text-[#1B4F72] transition-colors whitespace-nowrap"
+                    className="text-sm text-[#1A1A2E] hover:text-[#1B4F72] transition-colors"
                   >
                     {value}
                   </a>
                 ) : (
-                  <p className="text-sm text-[#1A1A2E] whitespace-nowrap">{value}</p>
+                  <p className="text-sm text-[#1A1A2E]">{value}</p>
                 )}
               </div>
             </motion.div>

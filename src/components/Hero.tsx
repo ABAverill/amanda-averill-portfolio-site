@@ -80,14 +80,14 @@ export default function Hero() {
 
           <motion.h1
             variants={fadeUp}
-            className="font-[family-name:var(--font-cormorant)] text-6xl md:text-8xl font-light tracking-[0.04em] text-[#1A1A2E] mb-5"
+            className="font-[family-name:var(--font-cormorant)] text-5xl sm:text-6xl md:text-8xl font-light tracking-[0.04em] text-[#1A1A2E] mb-5"
           >
             Amanda Averill
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
-            className="text-lg md:text-xl text-[#5C5C70] max-w-xl mb-10 leading-relaxed"
+            className="text-base md:text-xl text-[#5C5C70] max-w-xl mb-10 leading-relaxed"
           >
             Connecting exceptional talent with the organizations shaping the future of packaging, medical devices, and life sciences.
           </motion.p>
@@ -100,20 +100,20 @@ export default function Hero() {
               onClick={() =>
                 document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
               }
-              className="px-8 py-3.5 bg-[#1B4F72] text-white font-medium rounded-md hover:bg-[#1B4F72]/90 transition-all hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
+              className="w-full sm:w-auto px-8 py-3.5 bg-[#1B4F72] text-white font-medium rounded-md hover:bg-[#1B4F72]/90 transition-all hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
             >
               View My Work
             </button>
             <a
               href="mailto:Amanda.ma.averill@gmail.com"
-              className="px-8 py-3.5 border border-[#E5DFD6] text-[#1A1A2E] font-medium rounded-md hover:border-[#1B4F72] hover:text-[#1B4F72] transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
+              className="w-full sm:w-auto text-center px-8 py-3.5 border border-[#E5DFD6] text-[#1A1A2E] font-medium rounded-md hover:border-[#1B4F72] hover:text-[#1B4F72] transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
             >
               Get in Touch
             </a>
             <a
               href="/Amanda_Averill_Resume_March%202026.pdf"
               download
-              className="flex items-center gap-2 px-8 py-3.5 border border-[#E5DFD6] text-[#1A1A2E] font-medium rounded-md hover:border-[#1B4F72] hover:text-[#1B4F72] transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
+              className="w-full sm:w-auto justify-center flex items-center gap-2 px-8 py-3.5 border border-[#E5DFD6] text-[#1A1A2E] font-medium rounded-md hover:border-[#1B4F72] hover:text-[#1B4F72] transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
             >
               <Download size={16} />
               Resume

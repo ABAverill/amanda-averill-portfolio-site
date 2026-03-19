@@ -64,7 +64,7 @@ export default function Experience() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="mb-4 flex items-center gap-3"
+                  className="mb-4 flex items-center gap-3 flex-wrap"
                 >
                   {entry.logo && (
                     <div className="shrink-0 w-24 h-14 rounded-lg overflow-hidden border border-[#E5DFD6] bg-white shadow-sm flex items-center justify-center p-1.5">

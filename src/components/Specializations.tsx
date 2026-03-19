@@ -42,7 +42,7 @@ export default function Specializations() {
           Areas of expertise spanning functional disciplines, industries, and leadership levels.
         </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {specializationCategories.map((category, catIndex) => (
             <motion.div
               key={category.title}

@@ -54,8 +54,8 @@ function StatCounter({
   }, [active, target]);
   const display = isDecimal ? value.toFixed(1) : Math.round(value);
   return (
-    <div className="bg-white border border-[#E5DFD6] rounded-lg p-4 text-center shadow-sm hover:shadow-md hover:border-[#1B4F72]/30 transition-all">
-      <p className="text-2xl md:text-3xl font-medium text-[#1B4F72] mb-1 font-[family-name:var(--font-cormorant)] tabular-nums">
+    <div className="bg-white border border-[#E5DFD6] rounded-lg p-3 sm:p-4 text-center shadow-sm hover:shadow-md hover:border-[#1B4F72]/30 transition-all">
+      <p className="text-xl md:text-3xl font-medium text-[#1B4F72] mb-1 font-[family-name:var(--font-cormorant)] tabular-nums">
         {prefix}{display}{suffix}
       </p>
       <p className="text-xs text-[#A0A0B2] leading-tight">{label}</p>
@@ -123,7 +123,7 @@ export default function About() {
 
           <motion.div variants={item} className="space-y-6">
             {/* Animated stat counters */}
-            <div ref={ref} className="grid grid-cols-3 gap-4">
+            <div ref={ref} className="grid grid-cols-3 gap-2 sm:gap-4">
               {stats.map(({ target, suffix, label, prefix }) => (
                 <StatCounter
                   key={label}
